@@ -1,0 +1,149 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Outfit';
+    width:100%;
+    height: 100vh;
+    background-color:var(--Very-dark-blue);
+   overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius:10px;
+    background-color: var(--Very-dark-blue2);
+}
+
+.imgtxt{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+}
+.imgtxt img{
+    
+    width:100%;
+    padding-top: 10px;
+    border-radius:14px;
+    height:100%;
+    
+}
+.des{
+    color:var(--Soft-blue);
+    line-height: 1.5;
+    
+}
+.imgtxt .icon-view{
+    position: absolute;
+    background-color:hsl(178, 100%, 50%,60%);
+    background-size:cover;
+    top:5px;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+}
+.imgtxt .icon-view:hover{
+    opacity: 1;
+    cursor:pointer;
+    border-radius: 10px;
+}
+.imgtxt .icon-view img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: auto;
+}
+.text .title{
+    color: var(--White);
+    font-size:1.5rem;
+}
+.text .title:hover{
+    color:var(--Cyan);
+}
+.price {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--Very-dark-blue3);
+}
+.icon-price{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    
+}
+.price .prize{
+    color:var(--Cyan);
+}
+ .price img{
+    padding: 0px;
+    margin-right: 5px; 
+    width:10px;
+    height:17px;
+
+} 
+.price .time{
+    color:var(--Soft-blue);
+}
+.time1{
+    display:flex;
+    align-items:center;
+}
+.price .icon-clock{
+    width:15px;
+    height:15px;
+    
+}
+.footertext{
+    display:flex;
+    align-items: center;
+    margin-top: 2px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.footertext .avatar-img{
+    width:30px;
+    height:auto;
+    border:1px solid white;
+    border-radius: 50%;
+    margin:0px;
+    padding:0px;
+    margin-right: 15px;
+}
+.chng-color{
+    color:var(--Very-dark-blue3);
+}
+.footertext p{
+    color:var(--White);
+}
+.footertext p:hover{
+    color:var(--Cyan);
+    cursor: pointer;
+}
+.attribution{
+    position: absolute;
+    bottom:0;
+}
